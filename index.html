@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<!-- Mobile Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CDN link. -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Reset file link -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  	<!-- CSS file link. -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>Crystal Collector</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- Bootstrap jumbotron -->
+		<div class="jumbotron" style="background-color: #d90df4; color:white;">
+		  <div class="container">
+		    <h1 class="text-center"><strong>Crystal Collector</strong></h1>
+		</div>
+	</div>
+
+		<div class="row">
+
+			<!-- Instructons Container -->
+			<div class="col-lg-12">
+				<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title text-center">Instructons</h3>
+				  </div>
+				  <div class="panel-body"><h3><small>
+						The player will be shown a random number at the start of the game.
+						When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+						Your game will hide this amount until the player clicks a crystal.
+						When they do click one, update the player's score counter.
+						The player wins if their total score matches the random number from the beginning of the game.
+						The player loses if their score goes above the random number.
+						The game restarts whenever the player wins or loses.
+						When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.</small></h3>
+				  </div>
+				</div>
+			</div>			  
+			
+		</div>
+		<!-- Scores & Crystals -->
+		<div class="row">
+
+			<!-- Target Score -->
+			<div class="col-lg-3">
+
+				<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title text-center">Target Score</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<h3 class="text-center" id="targetScore"></h3>
+				  </div>
+				</div>
+			</div>			  
+
+			<!-- Your score -->
+			<div class="col-lg-3">
+
+				<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title text-center">Your Score</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<h3 class="text-center" id="yourScore"></h3>
+				  </div>
+				</div>
+			</div>
+
+			<!-- Crystals -->
+			<div class="col-lg-6">
+
+				<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title text-center">Crystal Selection</h3>
+				  </div>
+				  <div class="panel-body text-center">
+				  		<img src="assets/images/blue.jpg" width="90px" height="90px" alt="blue gem" id="blue">
+				  		<img src="assets/images/green.jpg" width="90px" height="90px" alt="green gem" id="green">
+				  		<img src="assets/images/purple.jpg" width="90px" height="90px" alt="purple gem" id="purple">
+				  		<img src="assets/images/red.jpg" width="90px" height="90px" alt="red gem" id="red">
+				  </div>
+				</div>
+
+			</div>	
+
+		</div>	  
+
+
+		<!-- Counters Row -->
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Win Count</h3>
+					</div>
+					<div class="panel-body">
+						<h3 class="text-center" id="winCount">0</h3>
+					</div>
+				</div>
+			</div>
+
+		<div class="col-lg-6">
+
+			<div class="panel panel-primary">
+				    <div class="panel-heading">
+						 <h3 class="panel-title text-center">Loss Count</h3>
+					</div>
+					<div class="panel-body">
+						<h3 class="text-center" id="lossCount">0</h3>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<!-- Main Game -->
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
